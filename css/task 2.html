@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 350px;
+            height: 300px;
+            background-color: #f28c28;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-card {
+            width: 280px;
+            height: 190px;
+            background-color: white;
+
+            display: flex;
+
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* LEFT SIDE */
+
+        .profile {
+            width: 65%;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .profile img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            
+            border: 2px solid #ddd;
+        }
+
+        .profile h3 {
+            margin-top: 8px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .profile p {
+            font-size: 9px;
+            color: #888;
+            margin-top: 3px;
+        }
+
+        .follow-btn {
+            width: 75px;
+            height: 25px;
+            margin-top: 12px;
+
+            border: 1px solid #999;
+            border-radius: 20px;
+
+            background-color: white;
+            color: #777;
+
+            font-size: 10px;
+        }
+
+        .message-btn {
+            width: 75px;
+            height: 25px;
+            margin-top: 7px;
+            border-radius: 20px;
+            border: 1px solid #999;
+            background-color: white;
+            color: #777;
+
+            font-size: 10px;
+        }
+        .message-btn:hover {
+            background-color: #4a2806;
+            color: white;
+        }
+
+        /* RIGHT SIDE */
+
+        .stats {
+            width: 35%;
+            background-color: #f5dce5;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat {
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border-bottom: 1px solid white;
+        }
+
+        .stat:last-child {
+            border-bottom: none;
+        }
+
+        .number {
+            font-size: 12px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .label {
+            font-size: 8px;
+            color: #888;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="profile-card">
+
+            <!-- Profile Section -->
+            <div class="profile">
+
+                <img src="https://media.istockphoto.com/id/1392994491/photo/alone-tree-on-green-meadow-against-cloudy-sky-at-dawn.jpg?s=612x612&w=0&k=20&c=caTOjYK5e8tm59BNultYTaC44GurCYt5wLG8lNrCsQI=" alt="Profile">
+
+                <h3>manish</h3>
+
+                <p>farmer</p>
+
+                <button class="follow-btn">
+                    Follow
+                </button>
+
+                <button class="message-btn">
+                    Message
+                </button>
+
+            </div>
+
+
+            <!-- Statistics Section -->
+            <div class="stats">
+
+                <div class="stat">
+                    <span class="number">523</span>
+                    <span class="label">Posts</span>
+                </div>
+
+                <div class="stat">
+                    <span class="number">1387</span>
+                    <span class="label">Likes</span>
+                </div>
+
+                <div class="stat">
+                    <span class="number">146</span>
+                    <span class="label">Follow</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

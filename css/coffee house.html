@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: #d2b48e;
+        text-align: center;
+      }
+      nav h1 {
+        font-size: 50px;
+        font-family: "Rock Salt", cursive;
+        font-weight: 900;
+        font-style: normal;
+        text-shadow: 3px 3px 4px rgb(161, 77, 17);
+      }
+      aside {
+        height: 500px;
+        width: 300px;
+        background-color: #e4d1b1;
+        text-align: center;
+        padding-top: 20px;
+        float:left;
+      }
+      aside a {
+        display: block;
+        font-size: 30px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgb(104, 76, 55);
+        font-weight: 550;
+        font-family: sans-serif;
+        line-height: 40px;
+      }
+      main{
+        height: 500px;
+        width: 100%;
+        background-color: #F5F5DB;
+        padding: 30px;
+        padding-left: 350px;
+      }
+      main h1{
+        font-family:sans-serif ;
+        margin-bottom: 20px;
+      }
+      main p{
+        font-family: sans-serif;
+        font-size: 23px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      td{
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 550;
+      }
+      input[type="submit"]{
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        background-color: #d2b48e;
+        border-radius: 8px;
+        font-family: sans-serif;
+        font-weight: 550;
+      }
+      footer{
+        background-color: #D2B48E;
+        text-align: center;
+        padding: 30px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>JavaJam Coffee House</h1>
+    </nav>
+    <aside>
+      <a href="">home</a>
+      <a href="">menu</a>
+      <a href="">music</a>
+      <a href="">jobs</a>
+    </aside>
+    <main>
+      <h1>Jobs at JavaJam</h1>
+      <p>
+        Want to work at Javajam ? Fill out the form below to start your
+        appication . Required fields are marked with an asterisk
+      </p>
+
+      <table height="300" width="400" cellspacing="20">
+        <tr>
+            <td align="right">*Name : </td>
+            <td><input type="text"></td>
+        </tr>
+         <tr>
+            <td align="right">*Email :</td>
+            <td><input type="email"></td>
+        </tr>
+         <tr>
+            <td align="right">*Start Date :</td>
+            <td><input type="date"></td>
+        </tr>
+         <tr>
+            <td align="right">*Experience :</td>
+            <td><textarea name="" id=""></textarea></td>
+        </tr>
+        <tr>
+            <td align="center"><input type="submit" value="Apply Now"></td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+        <h2>Copyright &copy; 2014 JavaJam Coffee House </h2>
+        <a href="">https://www.javajamcofee.com</a>
+    </footer>
+  </body>
+</html>

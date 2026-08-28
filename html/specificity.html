@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <!-- specificity-->
+        h1{
+            background-color: aqua; color: brown;
+        }
+        #heading{
+            background-color: orange; color: white;
+        }
+        .heading-1{
+            background-color: blueviolet; color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading" class="heading-1">HELLO WORLD</h1>
+</body>
+</html>
+<!-- order of specificity 
+ value=1000
+ id=100
+ class=10
+ tag=1
+ universal=0
+ -->

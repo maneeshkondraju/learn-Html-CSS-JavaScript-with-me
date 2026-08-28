@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+     
+         td{
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 550;
+      }
+      input[type="submit"]{
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        background-color: #d2b48e;
+        border-radius: 8px;
+        font-family: sans-serif;
+        font-weight: 550;
+      }
+      h1{
+        background-color: darkgoldenrod;
+        width: 240px;
+        margin-bottom: 0;
+      }
+    </style>
+</head>
+
+<body>
+   <center> <h1>Book Table</h1></center>
+    <form action="">
+        <table align="center" bgColor="pink" cellspacing="20">
+            <tr>
+                <td align="right"><label for="">name :</label></td>
+                <td> <input type="text"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">phno :</label></td>
+                <td> <input type="tel"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">email :</label></td>
+                <td> <input type="email"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">Booking Date :</label></td>
+                <td><input type="date">(DD-MM-YYYY)</td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">Seating Preference :</label></td>
+                <td>
+                    <select name="Table Number" id="">
+                        <option disabled selected>select option</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Outdore">Outdore</option>
+                        <option value="AC">AC</option>
+                        <option value="Non-Ac">Non-Ac</option>
+                        <option value="Private Room">Private Room</option>
+
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">Food Preferences :</label></td>
+                <td><input type="checkbox" name="food" value="Veg">
+                    <label for="">Veg</label>
+                    <input type="checkbox" name="food" value="Non-Veg">
+                    <label for="">Non-Veg</label>
+                </td>
+            </tr>
+             <tr>
+                <td align="right"><label for="">Payment Method :</label></td>
+                <td><input type="radio" name="Payment Method" value="Cash">
+                    <label for="">Cash</label>
+                    <input type="radio" name="Payment Method" value="UPI">
+                    <label for="">UPI</label>
+                    <input type="radio" name="Payment Method" value="Card">
+                    <label for="">Card</label>
+                              
+                </td>
+            </tr>
+            <tr>
+            <td align="center"><input type="submit" value="Book Now"></td>
+        </tr>
+        </table>
+    </form>
+</body>
+
+</html>

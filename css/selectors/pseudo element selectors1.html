@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* frst letter,frst line,before,after these selectors is used for any content  */
+        p::first-letter{
+            color: orange;
+            font-size: 40px;
+        }
+        p::first-line{
+            color: green;
+        }
+        p::before{
+            content: "INDIA"  ;
+        }
+        p::after{
+            content: "thank you";
+        }
+        /* marker is used only for list type itself  */
+        ul li::marker{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>  ___Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi tempore sapiente sed repudiandae quam cupiditate
+        architecto laudantium, quidem in neque commodi dolore iure nulla. Repellendus quod ad nemo at ipsum praesentium
+        expedita animi vel repellat sit dolor, fugit non ab numquam quos adipisci id? Similique perferendis quod hic
+        blanditiis earum?</p>
+
+        <ul type="square">
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+            <li>react</li>
+            <li>node</li>
+        </ul>
+</body>
+
+</html>

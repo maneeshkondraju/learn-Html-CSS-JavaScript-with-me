@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 600px;
+            width: 600px;
+            border: 2px solid;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-columns: 100px 200px 300px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1.5fr 2fr;
+            grid-template-columns: repeat(3, auto);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 150px);
+            grid-template-columns: 100px repeat(3, 150px);
+            grid-template-columns: repeat(2,100px 150px);
+            grid-template-columns: repeat(3, auto);
+            /* grid-template-rows: 100px 150px 200px;
+            grid-column-gap: 10px;
+            grid-row-gap:10px; */
+
+            gap: 10px;
+            gap: 10px 20px;
+
+        }
+         .div-1{
+            background-color: brown;
+        }
+         .div-2{
+            background-color: chartreuse;
+        }
+         .div-3{
+            background-color: blue;
+        }
+         .div-4{
+            background-color: cadetblue;
+        }
+         .div-5{
+            background-color: aqua;
+        }
+         .div-6{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+     <section>
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+        <div class="div-3"></div>
+        <div class="div-4"></div>
+        <div class="div-5"></div>
+        <div class="div-6"></div>
+    </section>
+</body>
+</html>

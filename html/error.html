@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Winta - Gourmet Restaurant</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #151519;
+            color: white;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            background-color: #111114;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo span {
+            color: #d8a84e;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #d8a84e;
+        }
+
+        .menu-button {
+            background-color: #d8a84e;
+            color: #111;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 430px;
+            padding: 70px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background:
+                linear-gradient(
+                    rgba(10, 10, 12, 0.65),
+                    rgba(10, 10, 12, 0.9)
+                ),
+                url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 550px;
+        }
+
+        .small-title {
+            color: #d8a84e;
+            font-size: 13px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: 55px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #c6c6c6;
+            line-height: 1.7;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #d8a84e;
+            color: #111;
+            padding: 13px 25px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        .hero-button:hover {
+            background-color: white;
+        }
+
+
+        /* ================= MENU SECTION ================= */
+
+        .menu-section {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+            font-family: Georgia, serif;
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        .section-heading p {
+            color: #999;
+            font-size: 13px;
+        }
+
+
+        /* ================= CATEGORIES ================= */
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .categories a {
+            text-decoration: none;
+            color: #aaa;
+            font-size: 12px;
+        }
+
+        .categories a:first-child {
+            color: #d8a84e;
+        }
+
+        .categories a:hover {
+            color: #d8a84e;
+        }
+
+
+        /* ================= FOOD CARDS ================= */
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .food-card {
+            background-color: #202024;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 155px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .food-info {
+            padding: 13px;
+        }
+
+        .food-info h3 {
+            font-family: Georgia, serif;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .food-info p {
+            color: #999;
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        .food-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stars {
+            color: #d8a84e;
+            font-size: 11px;
+        }
+
+        .price {
+            color: #ddd;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+
+        /* ================= REVIEWS ================= */
+
+        .reviews {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 0 70px;
+        }
+
+        .reviews-heading {
+            margin-bottom: 30px;
+        }
+
+        .reviews-heading h2 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .reviews-heading p {
+            color: #999;
+            font-size: 12px;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .review-card {
+            background-color: #202024;
+            padding: 22px;
+            border-radius: 5px;
+            border: 1px solid #29292d;
+        }
+
+        .review-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .review-name {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .review-stars {
+            color: #d8a84e;
+            font-size: 11px;
+        }
+
+        .review-card p {
+            color: #999;
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #0e0e10;
+            color: #777;
+            font-size: 12px;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .food-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 0 5%;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 60px 7%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .food-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .menu-section,
+            .reviews {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            win<span>t</span>a
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button class="menu-button">
+            Book Table
+        </button>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                WINTA STEAKHOUSE & BAR
+            </div>
+
+            <h1>
+                Check out our<br>
+                gourmet Menu
+            </h1>
+
+            <p>
+                Discover delicious dishes prepared with fresh
+                ingredients and served with passion. Experience
+                the perfect combination of taste and elegance.
+            </p>
+
+            <a href="#" class="hero-button">
+                View Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section">
+
+        <div class="section-heading">
+
+            <h2>
+                You may like one of our dishes
+            </h2>
+
+            <p>
+                Explore our most popular dishes
+            </p>
+
+        </div>
+
+
+        <!-- Categories -->
+
+        <div class="categories">
+
+            <a href="#">All</a>
+            <a href="#">Starters</a>
+            <a href="#">Salads</a>
+            <a href="#">Soups</a>
+            <a href="#">Sandwiches</a>
+            <a href="#">Cocktails & Beverages</a>
+            <a href="#">Confectionery</a>
+            <a href="#">Main Dishes</a>
+
+        </div>
+
+
+        <!-- Food Cards -->
+
+        <div class="food-grid">
+
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80"
+                    alt="Steak">
+
+                <div class="food-info">
+
+                    <h3>
+                        Beef Steak
+                    </h3>
+
+                    <p>
+                        Grilled beef with fresh vegetables
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span class="price">
+                            $24.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=500&q=80"
+                    alt="Salad">
+
+                <div class="food-info">
+
+                    <h3>
+                        Garden Salad
+                    </h3>
+
+                    <p>
+                        Fresh vegetables with special dressing
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span class="price">
+                            $14.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=500&q=80"
+                    alt="Pasta">
+
+                <div class="food-info">
+
+                    <h3>
+                        Italian Pasta
+                    </h3>
+
+                    <p>
+                        Homemade pasta with fresh ingredients
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span class="price">
+                            $18.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?auto=format&fit=crop&w=500&q=80"
+                    alt="Pasta">
+
+                <div class="food-info">
+
+                    <h3>
+                        Creamy Pasta
+                    </h3>
+
+                    <p>
+                        Creamy sauce with parmesan cheese
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span class="price">
+                            $20.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80"
+                    alt="Food">
+
+                <div class="food-info">
+
+                    <h3>
+                        Chef Special
+                    </h3>
+
+                    <p>
+                        Special dish prepared by our chef
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span class="price">
+                            $22.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80"
+                    alt="Pizza">
+
+                <div class="food-info">
+
+                    <h3>
+                        Italian Pizza
+                    </h3>
+
+                    <p>
+                        Crispy pizza with mozzarella
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span class="price">
+                            $16.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80"
+                    alt="Burger">
+
+                <div class="food-info">
+
+                    <h3>
+                        Classic Burger
+                    </h3>
+
+                    <p>
+                        Juicy beef burger with fresh toppings
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span class="price">
+                            $15.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=500&q=80"
+                    alt="Pasta">
+
+                <div class="food-info">
+
+                    <h3>
+                        Special Pasta
+                    </h3>
+
+                    <p>
+                        Pasta with herbs and creamy sauce
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span class="price">
+                            $19.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="reviews">
+
+        <div class="reviews-heading">
+
+            <h2>
+                What people say about us
+            </h2>
+
+            <p>
+                Come and join us for an extraordinary experience
+                of fresh and delicious food. Our customers love
+                our food, atmosphere and friendly service.
+            </p>
+
+        </div>
+
+
+        <div class="review-grid">
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <span class="review-name">
+                        Ivan Petrov
+                    </span>
+
+                    <span class="review-stars">
+                        ★★★★★
+                    </span>
+
+                </div>
+
+                <p>
+                    "The food was absolutely amazing. The steak
+                    was perfectly cooked and the service was
+                    excellent. I will definitely come back!"
+                </p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <span class="review-name">
+                        Anna Ivanova
+                    </span>
+
+                    <span class="review-stars">
+                        ★★★★★
+                    </span>
+
+                </div>
+
+                <p>
+                    "Beautiful restaurant with delicious food.
+                    The atmosphere was wonderful and the staff
+                    were very friendly."
+                </p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <span class="review-name">
+                        David Smith
+                    </span>
+
+                    <span class="review-stars">
+                        ★★★★★
+                    </span>
+
+                </div>
+
+                <p>
+                    "One of the best restaurants I have visited.
+                    Everything was fresh, tasty and beautifully
+                    presented."
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 Winta Steakhouse & Bar. All Rights Reserved.
+
+    </footer>
+
+
+</body>
+
+</html>

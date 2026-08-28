@@ -1,0 +1,83 @@
+html : hypertext markup language
+hypertext=links
+markup= predifined tags
+
+html history :- html was introduced by tim berners lee in 1991
+
+versions:- html-1:-1993,html-2:-1995,html-3:-1997,html-4:-1999,html-5:-2014
+
+html tags :- it is a predegined key word which is enclosed with angular braces and 
+classified into two types  1- paired tags(heading tags, paragraph tag, body tag)
+ 2- unpaired tags(br tag,img tag, input tag, hr tag)
+
+ html attributes:- global/core and element-specific attributes
+global/core:-it can be used in all types of tags(class,id,title,style)
+element-specific:-it can be used with only specific html elements(src, href,behaviour)
+
+anchor tag:-it is used to convert nrml text into hyper links, which is used to link from one webpage to another
+absolute path:- it specifies the full url of webpage
+relative path:-it specifies the file path which is existing in our system 
+href:- it is must attribute of anchoe tag which indicates the link destination
+
+target attribute:- it specifies where to open the linked document(_self,_blank,_parent,_top)
+
+html table:-html table are used to structure the data in the form of rows and columns 
+attributes of table:-border,cellpadding,cellspacing,allign,width,height,caption
+colspan,rowspan 
+
+img tag:- it is used to embed the image on the webpage
+types of paths:-absolute,relative ( height,width)
+download attribute:-it specifies that the target will be downloaded when a user clicks on the hyper link.
+
+audio tag:- it is used to embed or insert the audio to our webpage.
+attributes:-src,controls,autoplay,muted,loop.
+same for the video also.
+
+list:-it is used to list the group of items in a specific manner.
+types of lists:-ordered list,unordered list,description or definition list.
+
+FORMS:-it is used to collect the data from the user.
+input:-it specifies the input field,where user can enter the data.
+input types:-text,email,tel,password,range,radio,checkbox,file,submit,reset,number,data.
+
+TYPE ATTRIBUTES:-it is used to specify the type of the input fields.
+
+name attribute:- it act like as a container to store the data.
+
+values:-value attribute specifies the value of the input field.
+for radio,checkbox,dropdown,name value attribute are mandatory.
+
+place holder:-it specifies the input field where user can enter the data.
+
+select tag:-select tag is used for dropdown list.
+
+option:-it defines  option the select list.
+
+option group:-it is used to group all the selected options.
+
+text area:-it defines the multiple text input control.
+
+field set:-it is used to group the relative elements and gives the border to the form.
+
+legend:-it is used to define the caption for the field set tag.
+
+FORM VALIDATION ATTRIBUTES:-
+required:-it will make the input field are mandatory field.
+
+min:-it specifies the minimum value of the input field.
+
+max:-it specifies the maximum value of the input field.
+
+disabled:-it specifies the input field should be disabled.
+
+selected:-it specifies the selected option should be preselectedand it works with dropdown.
+
+checked:-it specifies the input field should be preselected and it works with radio and checkbox types.
+
+GET:-
+
+            
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        section{
+            height: 450px;
+            width: 350px;
+            background-color: #D3D3D3;
+            margin: 100px auto;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            box-shadow: 4px -4px white;
+        }
+        section input{
+            height: 60px;
+            width: 95%;
+            border: none;
+            background-color:white;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 4px rgb(166, 166, 166) inset , 0 0 5px 10px rgb(206, 206, 206) inset , 0 0 5px 12px rgb(230, 230, 230) inset , -3px 3px white;
+        }
+        main{
+            background-color: #D3D3D3;
+            height:300px ;
+            width: 92%;
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            gap: 12px;
+        }
+        div{
+          background-color: #f3f3f3;
+          border-radius: 7px;
+          box-shadow: 3px -3px white , -3px 3px gray;
+          font-size: 27px;
+          font-family: sans-serif;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .clr{
+            background-color: rgb(226, 7, 7);
+            color: white;
+        }
+          .opr{
+            background-color:black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <input type="text">
+        <main>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="opr">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="opr">-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="opr">*</div>
+            <div class="clr">C</div>
+            <div>0</div>
+            <div class="opr">=</div>
+            <div class="opr">/</div>
+        </main>
+    </section>
+</body>
+</html>
