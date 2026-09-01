@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-1{
+            height: 400px;
+            width: 400px;
+            border: 10px solid;
+            background-image: linear-gradient(red,green,yellow);
+            background-image: linear-gradient( to left red,green,yellow);
+            background-image: linear-gradient( to right red,green,yellow);
+            background-image: linear-gradient( to top red,green,yellow);
+            background-image: linear-gradient( 45deg red,green,yellow);
+            background-image: linear-gradient(  red 0% 3%,green 3% 6% ,yellow 6% 9%);
+            background-image: linear-gradient(  red 0% 33%,green 33% 66% ,yellow 66% 99%);
+            background-image: repeating-linear-gradient( 45deg , orange 0% 3%,white 3% 6% ,green 6% 9%);
+            background-image: repeating-linear-gradient(  orange ,white  ,green );
+        }
+        .div-2{
+            height: 400px;
+            width: 400px;
+            border: 10px solid;
+            background-image: radial-gradient(red,green,yellow);
+            background-image: radial-gradient(  red 0% 33%,green 33% 66% ,yellow 66% 99%);
+            background-image: repeating-radial-gradient(  red 0% 3%,green 3% 6% ,yellow 6% 9%);
+        }
+        .div-3{
+            height: 400px;
+            width: 400px;
+            border: 10px solid;
+            background-image:conic-gradient(violet,indigo,blue,green,yellow,orange,red);
+            background-image:conic-gradient( from 45deg ,violet,indigo,blue,green,yellow,orange,red);
+            background-image:conic-gradient( from 180deg ,violet,indigo,blue,green,yellow,orange,red);
+            background-image:conic-gradient( at 10% 10% ,violet,indigo,blue,green,yellow,orange,red);
+            background-image:conic-gradient( at 70% 40% ,violet,indigo,blue,green,yellow,orange,red);
+            background-image:conic-gradient( at 90% 90% ,violet,indigo,blue,green,yellow,orange,red);
+            background-image:conic-gradient( violet 0% 25%,indigo 25% 50%,blue 50% 75%,green 75% 100%);
+            background-image:conic-gradient(  violet 0% 3%,indigo 3% 6%);
+            background-image:repeating-conic-gradient(  violet 0% 3%,indigo 3% 6%);
+        }
+    </style>
+</head>
+<body>
+    <div class="div-1"></div>
+    <div class="div-2"></div>
+    <div class="div-3"></div>
+</body>
+</html>

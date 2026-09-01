@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: grid;
+            /* width: 100%; */
+            /* justify-content: space-evenly; */
+            height: 100vh;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(1,150px);
+        }
+        .div-1{
+            background-color: aqua;
+        }
+         .div-2{
+            background-color: blue;
+        }
+         .div-3{
+            background-color: brown;
+        }
+         .div-4{
+            background-color: chartreuse;
+        }
+        @media all and (min-width:700px) and (max-width:1000px){
+            section{
+                grid-template-columns: repeat(2,150px);
+                grid-template-rows:repeat(2,150px);
+            }
+        }
+         @media all and (min-width:50px) and (max-width:699px){
+            section{
+                grid-template-columns: repeat(1,150px);
+                grid-template-rows:repeat(4,150px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+        <div class="div-3"></div>
+        <div class="div-4"></div>
+
+    </section>
+</body>
+</html>
