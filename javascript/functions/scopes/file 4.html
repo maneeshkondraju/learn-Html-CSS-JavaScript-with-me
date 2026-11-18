@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        'use strict'
+
+
+        console.log(this)
+        var a= this;
+        console.log(a)
+
+
+        function greet(){
+            console.log(this)
+            let x=()=>{
+                console.log('fn dec',this)
+            }
+            x()
+        }
+        greet()
+
+
+        let m1 = function (){
+            console.log(this)
+            let m3 = () => {
+                console.log(this)
+            }
+            m3()
+        }
+        m1()
+
+        let m2 = () => {
+            console.log(this)
+        }
+        m2()
+
+        let details={
+            name:'maneesh',
+            age:22,
+            dob:2004,
+            address:{
+                city:'nellore',
+                state:'ap'
+            },
+            welcome:function(){
+                console.log('welcome!',this)
+            },
+            calcAge:function(course){
+                let age =2026-this.dob;
+                console.log(age,course)
+            },
+            greet:()=>{
+                console.log('greet!',this)
+            }
+            
+        }
+        details.welcome()
+        details.greet()
+        details.calcAge('mern')
+    </script>
+</body>
+</html>

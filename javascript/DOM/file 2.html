@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1-ele">Hello, World!</h1>
+    <script>
+        let h1ele=document.getElementById('h1-ele')
+        console.log(h1ele)
+        console.log(h1ele.textContent)
+        h1ele.textContent='hello browser object model';
+
+        let h5=document.getElementById('h5')
+        console.log(h5)
+        // in dom we want to access the elements the output will be null if the element is not present in the dom
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let obj ={
+        //     emp_id:101,
+        //     emp_name:'sam',
+        //     salary:20000,
+        //     gender:'male',
+        //     company:'tcs'
+        // }
+        // console.log(obj)
+
+
+        // let {emp_id,emp_name,salary,gender,company}=obj
+        // console.log(emp_name)
+        // console.log(salary)
+
+        //specific property destructuring
+
+        // let {company,salary}=obj
+        // console.log(company)
+
+
+        //default value  
+
+        // let {company,city='blr'}=obj
+        // console.log(city)
+
+
+        //renaming variables
+
+        // let {salary:s,company:c,gender}=obj
+        // console.log(s)
+        // console.log(c)
+
+
+        //using rest parameters
+
+        // let {emp_name,salary,...n}=obj
+        // console.log(n)
+
+        // let arr =[10,20,30,40,50]
+        // let [,b,...d]=arr
+        // console.log(d)
+
+        // let std ={
+        //     std_id:101,
+        //     std_name:'ram'
+        // }
+        // function user({std_id,std_name}){
+        //     return `my name is ${std_name} , id : ${std_id}`
+        // }
+        // let res = user(std)
+        // console.log(res)
+
+        let obj = {
+            std_id:101,
+            std_name:'john',
+            gender:'male',
+            address:{
+                street:'jayanager',
+                city:'blr'
+            },
+            age:22
+
+        }
+        let {std_id,std_name,age,address:{city,street}} = obj
+        console.log(std_name)
+        console.log(age)
+        console.log(city)
+        console.log(street)
+
+    // destructuring nested objects and arrays
+        let emp ={
+            data:[
+                {
+                    emp_id:102,
+                    emp_name:'sam'
+                },
+                {
+                    salary:20000,
+                    company:'tcs'
+                }
+            ],
+            hobbies:['playing kabaddi','cooking','watching cricket'],
+            place:'hyd'
+        }
+        let {data:[{emp_id,emp_name},{salary,company}],hobbies:[a,b,c],place}=emp
+        console.log(emp_id)
+        console.log(emp_name)
+        console.log(salary)
+        console.log(company)
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        console.log(place)
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

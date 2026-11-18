@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <p>para-1</p>
+    <p>para-2</p>
+    <h1 class="bg-yellow">hello browser object model</h1>
+    <h5 class="bg-yellow">hello h5</h5>
+
+    <script>
+        let ptags = document.getElementsByTagName('p')
+        console.log(ptags);
+
+        console.log(document.getElementsByTagName('#bg-yellow'));
+
+        let anytype = document.querySelector('.bg-yellow')
+        console.log(anytype)
+
+        let anytypeall = document.querySelectorAll('.bg-yellow')
+        console.log(anytypeall)
+
+     // differences between HTMLCollection and NodeList
+
+
+
+     // differences between defer and async
+     // async:-
+     // 1.execution order is not guaranteed 
+     //2.does not wait for the dom to be fully parsed
+     //3. may interrupt html parsing during execution
+     // defer:-
+     //1.maintains the order of external scripts
+     //2.waits until the dom is fully parsed
+     //3.does not interrupt html parsing during execution.
+    </script>
+</body>
+
+</html>

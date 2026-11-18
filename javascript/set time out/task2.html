@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown</title>
+</head>
+<body>
+
+    <button id="start-btn">Start Countdown</button>
+
+    <h2 id="output"></h2>
+
+    <script>
+        let startbtn = document.getElementById('start-btn');
+        let output = document.getElementById('output');
+
+        startbtn.addEventListener('click', function() {
+
+            setTimeout(() => {
+                output.textContent = 'Hi User';
+            }, 1000);
+
+        });
+    </script>
+
+</body>
+</html>

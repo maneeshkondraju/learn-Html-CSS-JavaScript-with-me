@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("first");
+        let count =0;
+        let intervalId=setInterval(()=>{
+            count++;
+            console.log('i will execute each 2 sec',count);
+            if (count === 5) {
+                clearInterval(intervalId);
+            }
+        },2000)
+        console.log("second");
+        console.log("third");
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            animation-name: task;
+            animation-duration: 4s;
+            position: absolute;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .div-1{
+            animation-name: one;
+            background-color: aqua;
+            z-index: 4s;
+          
+            
+        }
+        .div-2{
+            animation-name: two;
+            background-color: brown;
+            z-index: 3s;
+            animation-delay: 1s;
+            
+        }
+        .div-3{
+            animation-name: three;
+            background-color: yellow;
+           z-index: 2s;
+            animation-delay: 2s;
+          
+        }
+        .div-4{
+            animation-name: four;
+            background-color: deeppink;
+           z-index: 1s;
+            animation-delay: 3s;
+        }
+        @keyframes one {
+             0%{
+                margin-top: 0;
+                margin-left:0;
+            }
+            25%{
+                 margin-top: 0;
+                margin-left:300px;
+            }
+            50%{
+                 margin-top: 300px;
+                margin-left:300px;
+            }
+            75%{
+                 margin-top: 300px;
+                margin-left:0;
+            }
+            100%{
+                 margin-top: 0;
+                margin-left:0;
+            }
+        }
+         @keyframes two {
+             0%{
+                margin-top: 0;
+                margin-left:0;
+            }
+            25%{
+                 margin-top: 0;
+                margin-left:300px;
+            }
+            50%{
+                 margin-top: 300px;
+                margin-left:300px;
+            }
+            75%{
+                 margin-top: 300px;
+                margin-left:0;
+            }
+            100%{
+                 margin-top: 0;
+                margin-left:0;
+            }
+        }
+         @keyframes three {
+             0%{
+                margin-top: 0;
+                margin-left:0;
+            }
+            25%{
+                 margin-top: 0;
+                margin-left:300px;
+            }
+            50%{
+                 margin-top: 300px;
+                margin-left:300px;
+            }
+            75%{
+                 margin-top: 300px;
+                margin-left:0;
+            }
+            100%{
+                 margin-top: 0;
+                margin-left:0;
+            }
+        }
+         @keyframes four {
+             0%{
+                margin-top: 0;
+                margin-left:0;
+            }
+            25%{
+                 margin-top: 0;
+                margin-left:300px;
+            }
+            50%{
+                 margin-top: 300px;
+                margin-left:300px;
+            }
+            75%{
+                 margin-top: 300px;
+                margin-left:0;
+            }
+            100%{
+                 margin-top: 0;
+                margin-left:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div-1"></div>
+    <div class="div-2"></div>
+    <div class="div-3"></div>
+    <div class="div-4"></div>
+</body>
+</html>

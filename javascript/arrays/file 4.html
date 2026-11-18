@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        let b=a;
+        console.log(a,b)
+
+        b=20;
+        console.log(a,b)
+
+        let s1={
+            name:'ram',
+            age:22
+        }
+        let s2=s1;
+        console.log(s1)
+        console.log(s2)
+        
+        s2.age=23;
+        console.log(s1)
+        console.log(s2)
+
+        // in arrow function does we have arguments or not.?
+        // ans:- no arrow function doesn't have arguments object...
+        // difference between rest parameter and spread operator.?
+
+         let mul=function(){
+            console.log(arguments)
+            let a=()=>{
+                console.log('arrow' ,arguments)
+            }
+            a()
+        }
+        mul(20);
+
+
+        function data(n1,n2){
+            for(let i=0;i<arguments.lemgth;i++){
+                console.log(arguments[i])
+            }
+        }
+        data(20,30,40,50)
+    </script>
+</body>
+</html>

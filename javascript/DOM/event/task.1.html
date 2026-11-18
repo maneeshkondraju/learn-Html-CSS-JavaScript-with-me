@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <span id="count-display">0</span>
+    <button id="increment-btn+1">+1</button>
+    <button id="decrement-btn-1">-1</button>
+    <button id="increment-btn-5">+5</button>
+    <button id="increment-btn-10">+10</button>
+    <button id="reset-btn">reset</button>
+     <script>
+       
+        
+        
+        // i have +1,-1,+5,+10,reset buttons and i have one span tag to display the count value
+        let count=0;
+        let countDisplay=document.getElementById('count-display');
+        countDisplay.textContent=count;
+        
+        let incrementBtn=document.getElementById('increment-btn+1');
+        let decrementBtn=document.getElementById('decrement-btn-1');
+        let incrementBtn5=document.getElementById('increment-btn+5');
+        let incrementBtn10=document.getElementById('increment-btn+10');
+        let resetBtn=document.getElementById('reset-btn');
+
+        incrementBtn.addEventListener('click',function(){
+            count++;
+            countDisplay.textContent=count;
+        });
+
+        decrementBtn.addEventListener('click',function(){
+            count--;
+            countDisplay.textContent=count;
+        });
+
+        incrementBtn5.addEventListener('click',function(){
+            if (count < 5) {
+                count++;
+                countDisplay.textContent=count;
+            }
+        });
+
+        incrementBtn10.addEventListener('click',function(){
+            count+=10;
+            countDisplay.textContent=count;
+        });
+
+        resetBtn.addEventListener('click',function(){
+            count=0;
+            countDisplay.textContent=count;
+        });
+
+    </script>
+</body>
+</html>

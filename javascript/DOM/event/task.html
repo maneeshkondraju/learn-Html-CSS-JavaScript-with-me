@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+div{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border: 1px solid #ccc;
+}
+</style>
+<body>
+    
+    <span id="count-display">0</span>
+    <button id="increment-btn">Increment</button>
+    <button id="decrement-btn">Decrement</button>
+
+    <div id="color-ele"></div>
+
+
+
+
+
+
+    <script>
+        //initially my count value is 0 and i have two buttons indrement and decrement and i have one span tag to display the count value
+        let count=0;
+        let countDisplay=document.getElementById('count-display');
+        countDisplay.textContent=count;
+
+        let incrementBtn=document.getElementById('increment-btn');
+        let decrementBtn=document.getElementById('decrement-btn');
+        
+        incrementBtn.addEventListener('click',function(){
+            count++;
+            countDisplay.textContent=count;
+        });
+        
+        decrementBtn.addEventListener('click',function(){
+            count--;
+            countDisplay.textContent=count;
+        });
+        
+       
+
+    </script>
+</body>
+</html>

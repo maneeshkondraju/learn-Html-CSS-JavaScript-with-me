@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            height: 500px;
+            width: 500px;
+           
+            margin: 100px auto;
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(3,auto);
+          
+            gap: 40px;
+            position: relative;
+        }
+        .div-1{
+            height: 80px;
+            width: 80px;
+            background-color: orange;
+        }
+        .div-2{
+            height: 80px;
+            width: 80px;
+            background-color: orange;
+        }
+        .div-3{
+            height: 80px;
+            width: 80px;
+            background-color: orange;
+        }
+        .div-4{
+            height: 80px;
+            width: 80px;
+            background-color: orange;
+        }
+        .div-5{
+            height: 80px;
+            width: 80px;
+            background-color: orange;
+        }
+        .div-6{
+            height: 80px;
+            width: 80px;
+            background-color: orange;
+        }
+        .div:hover>.div-1, .div:hover>.div-2,.div:hover>.div-3,.div:hover>.div-4,.div:hover>.div-5,.div:hover>.div-6{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+        <div class="div-3"></div>
+        <div class="div-4"></div>
+        <div class="div-5"></div>
+        <div class="div-6"></div>
+    </div>
+</body>
+</html>

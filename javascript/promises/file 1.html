@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p1= new Promise((success,failure)=>{
+            success(`hello iam here!!!`)
+        });
+        console.log(p1);
+        p1.then(data=>console.log(data));
+        p1.catch(err=>console.log(err));
+        p1.finally(()=>console.log('promise settled'))
+
+        let p2= new Promise((resolve,reject)=>{
+            reject('sorry better luck next time(:')
+        });
+        console.log(p2)
+
+        p2.catch(err=>console.log(err))
+
+        let data =[2,3,4,5]
+        let p3=new Promise((resolve,reject)=>{
+            if(data){
+                resolve(data)
+            }
+            else{
+                reject('something went wrong!!')
+            }
+        });
+        console.log(p3)
+
+        p3.then((data)=>console.log(data))
+        .catch(err=>console.log(err))
+        .finally(()=>console.log('tried accessing data'))
+
+        let p4 =new Promise((success,failure)=>{
+
+        })
+        console.log(p4)
+
+        p4.then(data=>console.log(data))
+        .catch(err=>console.log(err))
+        .finally(()=>console.log('iam trying'))//pending
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num = 153;
+        // let temp = num;
+        // let count =0
+        // let sum = 0
+        // while(temp > 0){
+        //     temp = parseInt(temp/10)
+        //     count++
+        // }
+        // temp = num
+        // while(temp> 0){
+        //     let digit = temp % 10
+        //     sum += digit**count
+        //     temp = parseInt(temp /10)
+        // }
+        // console.log(sum)
+        // if (sum ==num)console.log(`${num} is a armstrong number`)
+        // else console.log(`${num} is not a armstrong number`)
+
+
+        let num = 1537;
+        let temp = num;
+        let count =0
+        let sum = 0
+        while(temp > 0){
+            temp = parseInt(temp/10)
+            count++
+        }
+        temp = num
+        while(temp> 0){
+            let digit = temp % 10
+            sum += digit**count
+            temp = parseInt(temp /10)
+        }
+        console.log(sum)
+        if (sum ==num)console.log(`${num} is a armstrong number`)
+        else console.log(`${num} is not a armstrong number`)
+    </script>
+</body>
+</html>

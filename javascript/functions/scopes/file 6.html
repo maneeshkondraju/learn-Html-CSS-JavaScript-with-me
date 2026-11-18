@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s1 = {
+            name:'ram',
+            age :21,
+            kids:1,
+            calcExpense:function(total){
+                let savings = 20000;
+                console.log(savings-total);
+                console.log(`${this.name} your current bal is ${savings-total}`)
+            }
+        }
+         let s2 = {
+            name:'hari',
+            age :22,
+            kids:2
+        }
+         let s3 = {
+            name:'sam',
+            age :23,
+            kids:3
+        }
+
+        function greet(city){
+            console.log(a)
+            console.log(`welcome mr and mrs ${this.name}, to ${city}`)
+        }
+
+        greet.call(s2,'blr',10);
+        greet.call(s3,'nlr',20);
+        
+        // s1.calcExpense(2000);
+        // s1.calcExpense.call(s3,4500)
+        
+        greet.apply(s2,['blr'],30);
+
+        let fun1 = greet.bind(s3,'chn',40)
+        fun1()
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bg-yellow{
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <h2 id="h2tag" >this is h2 tag</h2>
+    <p id="p1tag" align="center">p1 tag</p>
+    <p id="p2tag" title="p2" class="tag">p2 tag</p>
+
+    <script>
+
+        let p1tag=document.querySelector('#p1tag');
+        console.log(p1tag.getAttribute('align'))//center
+
+        let h2tag=document.getElementById('h2tag')
+        console.log(h2tag.getAttribute('class'))
+        
+        h2tag.setAttribute('class','bg-yellow')
+
+        console.log(h2tag.hasAttribute('align'))
+        console.log(h2tag.hasAttribute('class'))
+
+        let p2tag=document.getElementById('p2tag')
+
+        p2tag.removeAttribute('class');
+        p2tag.removeAttribute('title');
+
+        
+    </script>
+</body>
+</html>

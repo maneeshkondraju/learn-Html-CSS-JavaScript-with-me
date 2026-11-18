@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pure function
+        // function add(a,b){
+        //     let sum = a+b;
+        //     console.log(sum)
+        // }
+        // console.log('pure fn')
+        // add(1,2)//3
+        // add(1,2)//3
+        // add(1,2)//3
+
+        //impure function
+
+        // let total =0;
+        // function sum(x,y){
+        //     total += x+y;
+        //     console.log(total)
+        // }
+        // console.log('impure fn')
+        // sum(1,2)//0+1+2=3
+        // sum(1,2)//3+1+2=6
+        // sum(1,2)//6+1+2=9
+        // sum(1,2)//9+1+2=12
+
+
+        function outer(){
+            console.log('outer fn');//outer fn
+            function inner(){
+                console.log('inner fn')//inner fn
+            }
+            return inner;
+        }
+       let a=outer();
+       console.log(a)//
+        a();
+    </script>
+</body>
+</html>

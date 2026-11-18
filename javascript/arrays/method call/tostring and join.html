@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[2,3,4,5];
+        let b={name:"sam"};
+
+        console.log(typeof a);
+        console.log(typeof b);
+
+        console.log(Array.isArray(a));
+        console.log(Array.isArray(b));
+
+
+        let x=a.toString()
+        console.log(x,typeof x);
+
+        let y=a.join()
+        console.log(y, typeof y);//here comma is default separator
+
+
+        let z=a.join('-')
+        console.log(z, typeof z);
+        </script>
+</body>
+</html>

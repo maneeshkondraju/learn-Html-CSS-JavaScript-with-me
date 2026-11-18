@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s{
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            margin: 100px auto;
+            transition-duration: 1.5s;
+            transition-timing-function: linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .c{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 50%;
+           transition: 1.5s;
+  
+           
+        }
+        .s:hover{
+          border-radius: 50%;
+        }
+        .s:hover>.c{
+            border-radius: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="s">
+        <div class="c"></div>
+    </div>
+</body>
+</html>

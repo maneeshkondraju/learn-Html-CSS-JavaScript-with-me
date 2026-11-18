@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+    //function declaration
+    //non perameterized function
+
+    // function main(){
+    //     console.log("main is calling")
+    // }
+    // main()
+
+    // function m1(){
+    //     console.log("")
+    // }
+
+
+    // undefined will be returned by default
+
+    // function main(){
+    //     return
+    // }
+    // let res = main()
+    // console.log(res)
+
+    // function main(){
+
+    // }
+    // let res = main()
+    // console.log(res)
+
+    // function main(){
+    //     return "hello"
+    //     console.log("end")
+    // }
+    // let res = main()
+    // console.log(res)
+
+
+
+      for(num = 1; num <= 50 ; num++){
+         let prime = true;
+         if(num <= 1){
+             prime = false
+ 
+         } else{
+         for (let i = 2; i <= parseInt(num / 2); i++){
+             if (num % i == 0){
+                 prime = false
+                 break;
+             }
+         }
+     }
+         if (prime)console.log(num)
+ }
+
+    </script>
+</body>
+</html>

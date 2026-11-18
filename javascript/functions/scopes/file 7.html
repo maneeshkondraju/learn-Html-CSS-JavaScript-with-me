@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function intro(city){
+            console.log(this.name +" from " + city);
+        }
+        const user = {
+            name: "maneesh"
+        };
+        
+        intro.call(user,"kavali");
+        intro.apply(user,["nellore"]);
+
+        const newFunction = intro.bind(user,"chennai")
+        newFunction();
+    </script>
+</body>
+</html>

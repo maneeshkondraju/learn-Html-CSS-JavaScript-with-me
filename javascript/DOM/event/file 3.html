@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title-ele">hello everyone</h1>
+    <span id="count-display">0</span>
+    <button id="btn">change message</button>
+
+    <script>
+        let btnele=document.querySelector('#btn')
+        let h1tag=document.getElementById('title-ele')
+        
+       btnele.addEventListener('click',function(){
+        console.log('clicked')
+        h1tag.textContent='welcome'
+       })
+        
+        
+    </script>
+</body>
+</html>

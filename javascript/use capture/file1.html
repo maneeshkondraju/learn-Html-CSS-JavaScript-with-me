@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #g-parent{
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+            background-color: brown;
+            border: 2px solid black;
+        }
+         #parent{
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            background-color: bisque;
+            border: 2px solid black;
+        }
+         #child{
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            background-color: cadetblue;
+            border: 2px solid black;
+        }
+        #btn{
+            height: 20px;
+            width: 50px;
+            background-color: chocolate;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="g-parent">
+        <div id="parent">
+            <div id="child">
+                <button class="btn" id="btn">click</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+     let gparentele = document.getElementById("g-parent");
+     let parentele = document.getElementById("parent");
+        let childele = document.getElementById("child");
+        let btnele = document.getElementById("btn");
+
+        gparentele.addEventListener("click",function(){
+            console.log("g-parent clicked");
+        },true);
+
+        parentele.addEventListener("click",function(){
+            console.log("parent clicked");
+        },true);
+
+        childele.addEventListener("click",function(e){
+            console.log("child clicked");
+            e.stopPropagation();
+        },false);
+
+        btnele.addEventListener("click",function(){
+            console.log("button clicked");
+        },false);
+        
+    </script>
+</body>
+</html>

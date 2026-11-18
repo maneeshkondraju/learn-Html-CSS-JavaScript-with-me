@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // global and function/local scopes
+        let a = 10;
+        var sname ='maneesh';
+
+        console.log(a)
+        console.log(sname)
+        function greet(msg){
+            let age =22;
+            console.log(`welcoming our guest ${sname}`);
+            console.log(msg)
+            console.log(age);
+            function m1(){
+                console.log(`m1 fun`)
+            }
+            m1()
+        }
+        greet('hello');
+        if(sname){
+            let id = 101;
+            console.log(id);
+            console.log(id+a);
+            greet()
+            m1()
+        }
+
+    </script>
+</body>
+</html>

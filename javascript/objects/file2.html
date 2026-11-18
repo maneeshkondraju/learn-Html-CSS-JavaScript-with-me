@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let obj ={
+        name:'manish',
+        age:22,
+        gender:'male',
+        address:{
+            state:'ap'
+        }
+    }
+    console.log(obj);
+    console.log(obj.gender);
+    console.log(obj['address']['state']);
+
+
+    // let usersprop=prompt('enter property');
+    // console.log(usersprop)
+
+    //console.log(obj.usersprop)
+
+    
+    let data = 'gender'
+    console.log(obj[data]);
+
+    let user={
+        uname:'tom',
+        uID:101,
+        "first name":'tommy',
+        8:'potter'
+    }
+
+    console.log(user);
+    //console.log(user.'first name')
+    console.log(user['first name']);
+    console.log(user['8']);
+    </script>
+</body>
+</html>

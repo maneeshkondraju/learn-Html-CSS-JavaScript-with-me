@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function checkEvenOrOdd(num) {
+            if (num % 2 === 0) {
+                return "Even";
+            } else {
+                return "Odd";
+            }
+        }
+
+        console.log(checkEvenOrOdd(10)); // Even
+        console.log(checkEvenOrOdd(7));  // Odd
+
+
+
+
+        function isPrime(num) {
+            if (num <= 1) {
+                return false;
+            }
+
+            for (let i = 2; i <= parseInt(num / 2); i++) {
+                if (num % i == 0) {
+                    return 'it is not a prime number';
+                }
+            }
+
+            return "it is a prime number";
+        }
+
+        console.log(isPrime(7));
+        console.log(isPrime(10));
+        console.log(isPrime(1));
+
+
+
+
+        function isLeapYear(year) {
+            if ((year % 4 == 0 && year % 100 !== 0) ||
+                year % 400 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log(isLeapYear(2024)); // true
+        console.log(isLeapYear(1900)); // false
+        console.log(isLeapYear(2028)); // true
+
+
+
+
+
+        function isdiscount(billAmount) {
+            if (billAmount > 1000) {
+                return billAmount * 0.1; // 10% discount
+            } else if (billAmount > 3000) {
+                return billAmount * 0.2; // 20% discount
+            } else if (billAmount < 1000) {
+                return 0; // No discount
+            }
+        }
+
+        console.log(isdiscount(1500)); // 150
+        console.log(isdiscount(800));  // 0
+        console.log(isdiscount(4000)); // 800
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var x = 10;
+     {
+        console.log(x)
+        var x = 20;
+        console.log(x)
+     }
+     console.log(x);
+     console.log('-----------------------');
+     var y = 100;
+     {
+        //console.log(y);
+        let y = 200;
+        console.log(y)
+     }
+     console.log(y)
+
+     for(var i = 0;i<=3;i++){
+        console.log('loop', i)
+     }
+     console.log(i)
+     console.log('---------------------')
+
+
+      for(let j = 0;j<=3;j++){
+        console.log('loop with let', j)
+     }
+     console.log(j)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //anonymus function
+        //function expression
+
+        let main = function(){
+            console.log("main is calling")
+        }
+        main()
+        main()
+
+        let m1 = function fun(){
+            console.log("m1 is calling")
+        }
+        m1()
+
+        //parameterized function ecpression
+
+        let mul = function(x,y){
+            return `${x} * ${y} = ${x*y}`
+        }
+        let res = mul(7,8)
+        console.log(res)
+
+        console.log(mul)
+        console.log(mul(7,6))
+    </script>
+</body>
+</html>

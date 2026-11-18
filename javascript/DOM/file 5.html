@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title-ele">hello everyone</h1>
+        <p>this is para <span style="display: none;">this is span</span> </p>
+        <div id="child"></div>
+    </div>
+
+    <script>
+        let container=document.getElementById("container");
+        let childEle=document.getElementById("child");
+        let titleEle=document.getElementById("title-ele");
+
+        console.log(container.textContent);
+        console.log(container.innerText);
+        console.log(container.innerHTML);
+
+        console.log('-------------------');
+
+        // childEle.textContent='hii'
+        // childEle.textContent='<p>helloooo00</p>'
+
+        // childEle.innerText='hii'
+        // childEle.innerText='<p>helloooo00</p>'
+
+        // childEle.innerHTML='hii'
+        // childEle.innerHTML='<p>helloooo00</p>'   
+
+
+        titleEle.style.backgroundColor='yellow'
+        titleEle.style.color='red';
+        titleEle.style.textAlign='center';
+
+        console.log(titleEle.style)
+
+
+       
+    </script>
+</body>
+</html>

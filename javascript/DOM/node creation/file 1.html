@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        height:90px;
+        width:100%;
+        background-color:lightblue;
+    }
+</style>
+<body>
+    <h1>hello</h1>
+    <div id="container">
+
+    </div>
+
+    <script>
+        let divtag=document.querySelector('#container');
+        let h4tag=document.createElement('h4');
+        console.log(h4tag);
+        h4tag.textContent='welcome to jsp';
+        let h5tag=document.createElement('h5');
+        h5tag.textContent='welcome to jsp class';
+        let ptag=document.createElement('p');
+        ptag.textContent='this is paragraph';
+        console.log(ptag)
+
+        // divtag.appendChild(h4tag);
+        // divtag.appendChild(ptag);
+        // divtag.appendChild('hello');//cant pass text
+
+        divtag.append(h4tag,ptag,'hello',h5tag);//append can pass text also
+        divtag.removeChild(h4tag);//remove child is used to remove the child element from parent
+        ptag.remove();//remove is used to remove the element from dom
+    </script>
+</body>
+</html>

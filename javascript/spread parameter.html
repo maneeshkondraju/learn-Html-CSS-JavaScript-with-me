@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spread operator --> unpacking the values
+
+        // function sum(a,b,...c){
+        //     console.log(c)
+        //     return a+b
+        // }
+        // let arr=[10,20,30,40]
+        // let res = sum(...arr)//spread operator
+        // console.log(res)
+
+        //coping an array
+
+        // let arr=[10,20,30,40]
+        // let arr1=[...arr]
+        // arr1[0]=100
+        // console.log(arr)//[10,20,30,40]
+        // console.log(arr1)//[100,20,30,40]
+
+
+        //combining two arrays
+
+        // let arr=[10,20,30,40]
+        // let arr1=[100,200,300,400]
+        // let combinedarr=[...arr,...arr1]
+        // console.log(combinedarr)
+
+
+        //adding new elements to an array
+
+        // let arr=[10,20,30,40]
+        // let arr1=['hello', ...arr, 'bye']
+        // console.log(arr1)
+
+
+        //copying an object
+
+        // let obj={
+        //     std_id:101,
+        //     std_name:'ram',
+        //     std_age:21,
+        //     gender:'male'
+        // }
+        // let obj1={...obj}
+        // obj1.std_name='sam'
+        // console.log(obj)
+        // console.log(obj1)
+
+
+        //adding new properties to an object
+
+        let obj={
+            std_id:101,
+            std_name:'ram',
+            std_age:21,
+            gender:'male'
+        }
+        let obj1={...obj,std_name:'sam', city:'blr'}
+        console.log(obj)
+        console.log(obj1)
+
+
+        //combining two objects
+
+          let obj2={
+            std_id:101,
+            std_name:'ram'
+           
+        }
+          let obj3={
+           
+            std_age:23,
+            gender:'female'
+        }
+        let combinedobj ={...obj2,...obj3}
+        console.log(combinedobj)
+
+
+        // let arr=[10,20,30,40]
+        // console.log(...arr)// 10 20 30 40
+
+        let arr=[5,7,3,9,3,4]
+        console.log(Math.min(...arr)) //3
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: brown;
+            width: fit-content;
+            margin: auto;
+            box-shadow: 5px 5px 8px 3px;
+            position: absolute;
+            margin-left: 42%;
+            margin-top: 15px;
+        }
+        *{
+           
+            margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>lexical scope</h1>
+  
+    <script>
+        function outer(){
+            let name = 'maneesh';
+            function greet(){
+                console.log(`welcome ${name}`)
+            }
+            greet()
+            console.log('outer done')
+        } 
+        outer()
+        console.log('--------------------------')
+
+        function counter(){
+            let count =0;
+            console.log('counter fun')
+            function inner(){
+                count++;
+                console.log(count)
+            }
+            return inner;
+        }
+        let res = counter();
+        console.log(res);
+        res();
+        res();
+        res();
+        res();
+        
+    </script>
+</body>
+</html>

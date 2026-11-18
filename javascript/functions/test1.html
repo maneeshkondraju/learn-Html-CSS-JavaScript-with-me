@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function main(a){
+        //     console.log(a);
+        //     a++;
+        //     console.log(m1(a));
+        //     m1(a++);
+        //     console.log(a);
+        // }
+        // function m1(x){
+        //     x=x++
+        //     console.log(x)
+        //     return x
+        // }
+        // main(3)
+
+        // let x1 = function(a){
+        //     let n1 = a++;
+        //     function inner(){
+        //         console.log(n1);
+        //         return a;
+        //     }
+        //     console.log(inner())
+        //     console.log(a,n1)
+        // }
+        // x1(1)
+
+        function m2(x1,x2){
+            let sum = x1+x2;
+            let multiply = x1*x2;
+            let total = ()=> sum + multiply;
+            console.log(sum)
+            console.log(multiply)
+            console.log(total())
+            if (total > 10) return total;
+            else return (sum,multiply);
+        }
+        m2(1,2) 
+
+        // let result = (a,b)=>{
+        //     console.log(a);
+        //     console.log(b);
+
+        //     return () => a+b
+        // };
+        // let y = result(10,20);
+        // console.log(y());
+        // y();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s1={
+            name : 'maneesh',
+            age :22,
+            gender:'male',
+            status:'unmarried',
+            kids:false,
+            country:'india',
+            location:{
+                longitude:'54.65',
+                latitude:'76.56'
+            },
+            greet:()=>{
+                console.log('welcome to our house')
+            }
+
+        }
+        console.log(s1);
+        let studAge=s1.age;
+        console.log(studAge);
+        console.log(s1.status);
+        s1.status='married';//here updating the value to the existing value in the object
+        console.log(s1);
+        s1.city='bangalore';//here adding a new value in the object
+        console.log(s1);
+        console.log(s1.pincode)//when we are tring to access that are not existing then javascript will give 'undefined'
+        console.log(s1.location)
+        console.log(s1.location.longitude)
+        s1.greet();
+        // object constructor
+        let s2= new Object();
+        console.log(s2);
+        s2.name='manish';
+        console.log(s2)
+    </script>
+</body>
+</html>

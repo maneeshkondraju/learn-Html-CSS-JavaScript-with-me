@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('first')
+        setTimeout(()=>{
+            console.log('i will execute after 2 secs')
+        },2000)
+        console.log('second')
+         setTimeout(()=>{
+            console.log('i will execute after 1 secs-1')
+        },1000)
+        console.log('third')
+         setTimeout(()=>{
+            console.log('i will execute after 1 secs-2')
+        },1000)
+        console.log('fourth')
+         setTimeout(()=>{
+            console.log('i will execute after 3 secs')
+        },3000)
+        console.log('fifth')
+    </script>
+</body>
+</html>

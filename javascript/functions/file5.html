@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //without default parameters
+
+    // function sum(a,b){
+    //     console.log(a,b)
+    //     console.log(a+b)
+    // }
+    // sum()
+    // sum(2)
+    // sum(2,3)
+    // sum(2,3,4,5)
+
+
+
+    //with default values parameters
+
+    //  function sum(a=0,b=0){
+    //     console.log(a,b)
+    //     console.log(a+b)
+    // }
+    // sum()
+    // sum(2)
+    // sum(2,3)
+    // sum(2,3,4,5)
+
+
+    //higher order function
+
+  
+    let sum = (a,b) => a+b
+    let sub = (a,b) => a-b
+    let mul = (a,b) => a*b
+    let div = (a,b) => a/b
+
+    function calculator(n1,n2,calcType){
+        console.log(n1,n2)
+        console.log(calcType)
+        console.log(calcType(n1,n2))
+    }
+    calculator(2,3,sum)
+    calculator(2,3,sub)
+    calculator(2,3,mul)
+    calculator(2,3,div)
+    
+</script>
+</body>
+</html>

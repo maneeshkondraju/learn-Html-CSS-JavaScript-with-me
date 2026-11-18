@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a1=['sam', 'ram', 'hari', 'john','tim'];
+        console.log(a1[0])
+        console.log(a1[1])
+        // instead of writing same console multiple times we can go with for loop
+        console.log('for looop');
+        
+        for (let i =0;i<a1.length;i++){
+            console.log(i,a1[i])
+        }
+        console.log('----------------------------');
+        
+        for (let i =2;i<a1.length;i++){
+            console.log(i,a1[i])
+        }
+        console.log('----------------------------');
+        
+        for (let i =2;i<=3;i++){
+            console.log(i,a1[i])
+        }
+        console.log('----------------------------');
+        console.log('for of loop')
+        
+        for (let ele of a1){
+            console.log(ele)
+        }
+        console.log('----------------------------');
+
+        console.log('for in loop')
+
+        for(let index in a1){
+            console.log(index)
+            console.log(a1[index])
+        }
+
+
+        
+
+    </script>
+</body>
+</html>

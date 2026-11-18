@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Storage API</h1>
+    <script>
+        //cookies 4kb
+        //session storage 5 to 10 mb
+        //local storage 5 to 10 mb
+
+        let username='smith';
+         sessionStorage.setItem('username',username);
+
+         let a= sessionStorage.getItem('username');
+         console.log(a);
+
+         sessionStorage.setItem('age',22);
+
+        // sessionStorage.removeItem('age');
+
+        // console.log(sessionStorage.length);
+        // console.log(sessionStorage.key(0));
+        // console.log(sessionStorage.key(1));
+        // console.log(sessionStorage.key(2));
+        // console.log(sessionStorage.key(3));
+
+        sessionStorage.clear();
+
+        //difference between local storage and session storage
+        //local storage is permanent until user clears it
+        //session storage is temporary and will be cleared when the browser is closed
+        //session storage is only available for the current session and will be cleared when the browser is closed
+        //local storage is available for all sessions and will not be cleared when the browser is closed
+    </script>
+</body>
+</html>
